@@ -1,0 +1,6 @@
+source("R/reproduction.R")
+source("R/plots.R")
+plot_residency(reproduce_residency())
+outages <- read.csv("results/outage-summary.csv")
+plot_outages(outages)
+plot_outages(outages, "gap")
